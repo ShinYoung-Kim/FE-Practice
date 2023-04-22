@@ -113,4 +113,5 @@ document.getElementById("root").append(JSON.stringify(page));
 //append를 통해서 추가하려고 하면 object 내용들이 화면에 뜬다
 //react element는 react를 거쳐서 추가되어야 원하는 방향으로 렌더링된다
 
+ReactDOM.render(page, document.getElementById("root"));
 
