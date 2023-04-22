@@ -133,23 +133,45 @@ _source : null
 
 // ReactDOM.render(page, document.getElementById("root"));
 
-//Custom Element
-//camel case가 아닌 파스칼 case 사용할 것 (생성자처럼 이름 붙이기)
-//함수를 tag처럼 바꿔서 호출해주기
+// //Custom Element
+// //camel case가 아닌 파스칼 case 사용할 것 (생성자처럼 이름 붙이기)
+// //함수를 tag처럼 바꿔서 호출해주기
 
-function TemporarayName() {
-    return (<div>
-        <img src="./react-logo.png" width="40px" />
-        <h1>Fun facts about React</h1>
-        <ul>
-            <li>Was first released in 2013</li>
-            <li>Was originally created by Jordan Walke</li>
-            <li>Has well over 100K stars on Github</li>
-            <li>Is maintained by Facebook</li>
-            <li>Powers thousands of enterprise apps, including mobile apps</li>
-        </ul>
-    </div>
+// function TemporarayName() {
+//     return (<div>
+//         <img src="./react-logo.png" width="40px" />
+//         <h1>Fun facts about React</h1>
+//         <ul>
+//             <li>Was first released in 2013</li>
+//             <li>Was originally created by Jordan Walke</li>
+//             <li>Has well over 100K stars on Github</li>
+//             <li>Is maintained by Facebook</li>
+//             <li>Powers thousands of enterprise apps, including mobile apps</li>
+//         </ul>
+//     </div>
+//     )
+// };
+
+// ReactDOM.render(<TemporarayName/>, document.getElementById("root"));
+
+function OrderedList () {
+    return (
+        <div>
+        <header>
+            <nav>
+                <img src="./react-logo.png" width="40px"/>
+            </nav>
+        </header>
+        <h1>Reasons</h1>
+        <ol>
+            <li>many uses</li>
+            <li>curiosity</li>
+        </ol>
+        <footer>
+            <small> 2021 ziroll development. All rights reserved.</small>
+        </footer>
+        </div>
     )
-};
+}
 
-ReactDOM.render(<TemporarayName/>, document.getElementById("root"));
+ReactDOM.render(<OrderedList />, document.getElementById("root"));
