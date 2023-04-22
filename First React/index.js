@@ -94,24 +94,41 @@ _source : null
 
 // ReactDOM.render(navbar, document.getElementById("root"));
 
+// const page = (
+//     <div>
+//         <h1>Why awesome website in React</h1>
+//         <h3>reaseons</h3>
+//         <ol>
+//             <li>composable</li>
+//             <li>declarative</li>
+//             <li>hireable</li>
+//         </ol>
+//     </div>
+// );
+
+// document.getElementById("root").append(page);
+// // result : [object Object];
+
+// document.getElementById("root").append(JSON.stringify(page));
+// //append를 통해서 추가하려고 하면 object 내용들이 화면에 뜬다
+// //react element는 react를 거쳐서 추가되어야 원하는 방향으로 렌더링된다
+
+// ReactDOM.render(page, document.getElementById("root"));
+// //ReactDOM.render의 역할은 react element를 찾아 해석하고 
+// //브라우저가 이해할 수 있는 real dom element로 바꿔주는 역할
+
 const page = (
     <div>
-        <h1>Why awesome website in React</h1>
-        <h3>reaseons</h3>
-        <ol>
-            <li>composable</li>
-            <li>declarative</li>
-            <li>hireable</li>
-        </ol>
+        <img src="./react-logo.png" width="40px"/>
+        <h1>Fun facts about React</h1>
+        <ul>
+            <li>Was first released in 2013</li>
+            <li>Was originally created by Jordan Walke</li>
+            <li>Has well over 100K stars on Github</li>
+            <li>Is maintained by Facebook</li>
+            <li>Powers thousands of enterprise apps, including mobile apps</li>
+        </ul>
     </div>
 );
 
-document.getElementById("root").append(page);
-// result : [object Object];
-
-document.getElementById("root").append(JSON.stringify(page));
-//append를 통해서 추가하려고 하면 object 내용들이 화면에 뜬다
-//react element는 react를 거쳐서 추가되어야 원하는 방향으로 렌더링된다
-
 ReactDOM.render(page, document.getElementById("root"));
-
