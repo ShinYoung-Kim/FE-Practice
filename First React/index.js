@@ -8,16 +8,27 @@
 //     document.getElementById("root")
 // );
 
-//custom component
-function MainContent() {
-    return (
-        <h1>I'm learning React!</h1>
-    )
-};
+// //custom component
+// function MainContent() {
+//     return (
+//         <h1>I'm learning React!</h1>
+//     )
+// };
 
-ReactDOM.render(
-    <div>
-        <MainContent />
-    </div>,
-    document.getElementById("root")
-);
+// ReactDOM.render(
+//     <div>
+//         <MainContent />
+//     </div>,
+//     document.getElementById("root")
+// );
+
+//imperative한 vanilla js
+const h1 = document.createElement("h1");
+h1.textContent = "This is an imperative way to program";
+h1.className = "header";
+document.getElementById("root").append(h1);
+//step by step으로 어떻게 추가해야하는지 알려줘야 한다.
+//element가 많아질수록 불리해진다.
+
+//declarative한 react
+ReactDOM.render(<h1 className="header">Hello, everyone!</h1>, document.getElementById("root"));
