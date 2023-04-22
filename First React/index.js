@@ -58,4 +58,16 @@ _source : null
 //=> JSX는 react가 이해할 수 있는 object를 반환하는 일종의 함수
 //-> 화면에 표시할 수 있는 실제 element를 만드는 데 도움이 된다.
 
-ReactDOM.render(element, document.getElementById("root"));
+//React 특징 : wrap!
+// ReactDOM.render(<h1 className="header">Hello, everyone!</h1><p></p>, 
+//     document.getElementById("root")
+//     );
+//해당 코드는 uncaught syntaxError 발생 : adjacent jsx elements must be wrapped!
+//여러 태그 연속적으로 넣고 싶다면 그들을 감싸는 부모 태그가 있어야 한다.
+
+ReactDOM.render(<div>
+    <h1 className="header">Hello, everyone!</h1>
+    <p>paragraph!</p>
+    </div>, 
+    document.getElementById("root")
+    );
