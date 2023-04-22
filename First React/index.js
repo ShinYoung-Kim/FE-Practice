@@ -154,22 +154,65 @@ _source : null
 
 // ReactDOM.render(<TemporarayName/>, document.getElementById("root"));
 
-function OrderedList () {
+// function OrderedList () {
+//     return (
+//         <div>
+//         <header>
+//             <nav>
+//                 <img src="./react-logo.png" width="40px"/>
+//             </nav>
+//         </header>
+//         <h1>Reasons</h1>
+//         <ol>
+//             <li>many uses</li>
+//             <li>curiosity</li>
+//         </ol>
+//         <footer>
+//             <small> 2021 ziroll development. All rights reserved.</small>
+//         </footer>
+//         </div>
+//     )
+// }
+
+// ReactDOM.render(<OrderedList />, document.getElementById("root"));
+
+// Parent / Child component
+function Header() { //children component
     return (
-        <div>
         <header>
             <nav>
-                <img src="./react-logo.png" width="40px"/>
+                <img src="./react-logo.png" width="40px" />
             </nav>
         </header>
-        <h1>Reasons</h1>
-        <ol>
-            <li>many uses</li>
-            <li>curiosity</li>
-        </ol>
+    )
+}
+
+function Footer() { //children component
+    return (
         <footer>
             <small> 2021 ziroll development. All rights reserved.</small>
         </footer>
+    )
+}
+
+function MainContent() { //children component
+    return (
+        <div>
+            <h1>Reasons</h1>
+            <ol>
+                <li>many uses</li>
+                <li>curiosity</li>
+            </ol>
+        </div>
+    )
+}
+
+function OrderedList() { //parent component
+    return (
+        <div>
+            <Header /> 
+            <MainContent />
+            <Footer />
         </div>
     )
 }
