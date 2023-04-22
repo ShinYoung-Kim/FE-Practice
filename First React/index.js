@@ -177,40 +177,11 @@ _source : null
 // ReactDOM.render(<OrderedList />, document.getElementById("root"));
 
 // Parent / Child component
-function Header() { //children component
-    return (
-        <header>
-            <nav className="nav">
-                <img src="./react-logo.png" className="nav-logo" />
-                <ul className="nav-items">
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
-    )
-}
 
-function Footer() { //children component
-    return (
-        <footer>
-            <small> 2021 ziroll development. All rights reserved.</small>
-        </footer>
-    )
-}
-
-function MainContent() { //children component
-    return (
-        <div>
-            <h1>Reasons</h1>
-            <ol>
-                <li>many uses</li>
-                <li>curiosity</li>
-            </ol>
-        </div>
-    )
-}
+//별도 파일로 분리
+import Header from "./Header"
+import Footer from "./Footer"
+import MainContent from "./MainContent"
 
 function OrderedList() { //parent component
     return (
