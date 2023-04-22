@@ -35,13 +35,13 @@
 
 //JSX = javascript XML
 //: html처럼 보이는 javascript
-const h1 = document.createElement("h1");
-h1.textContent = "This is an imperative way to program";
-h1.className = "header";
-console.log(h1);
+// const h1 = document.createElement("h1");
+// h1.textContent = "This is an imperative way to program";
+// h1.className = "header";
+// console.log(h1);
 
-const element = <h1 className="header">Hello, everyone!</h1>;
-console.log(element);
+// const element = <h1 className="header">Hello, everyone!</h1>;
+// console.log(element);
 //=> javascript object가 뜬다. 
 /*
 $$typeof : Symbol(react.element)
@@ -65,18 +65,52 @@ _source : null
 //해당 코드는 uncaught syntaxError 발생 : adjacent jsx elements must be wrapped!
 //여러 태그 연속적으로 넣고 싶다면 그들을 감싸는 부모 태그가 있어야 한다.
 
+// const page = (
+//     <div>
+//     <h1 className="header">Hello, everyone!</h1>
+//     <p>paragraph!</p>
+//     </div>
+// );
+
+// console.log(page);
+// ReactDOM.render(
+//     page, 
+//     document.getElementById("root")
+//     );
+
+// // JSX 묶음을 하나의 variable에 선언할 수 있고, 
+// // 해당 variable은 다른 variable과 마찬가지로 사용할 수 있다.
+
+// const navbar = (
+//     <nav>
+//         <h1>Bistro</h1>
+//         <ul>
+//             <li>Menu</li>
+//             <li>About</li>
+//             <li>Contact</li>
+//         </ul>
+//     </nav>
+// )
+
+// ReactDOM.render(navbar, document.getElementById("root"));
+
 const page = (
     <div>
-    <h1 className="header">Hello, everyone!</h1>
-    <p>paragraph!</p>
+        <h1>Why awesome website in React</h1>
+        <h3>reaseons</h3>
+        <ol>
+            <li>composable</li>
+            <li>declarative</li>
+            <li>hireable</li>
+        </ol>
     </div>
 );
 
-console.log(page);
-ReactDOM.render(
-    page, 
-    document.getElementById("root")
-    );
+document.getElementById("root").append(page);
+// result : [object Object];
 
-// JSX 묶음을 하나의 variable에 선언할 수 있고, 
-// 해당 variable은 다른 variable과 마찬가지로 사용할 수 있다.
+document.getElementById("root").append(JSON.stringify(page));
+//append를 통해서 추가하려고 하면 object 내용들이 화면에 뜬다
+//react element는 react를 거쳐서 추가되어야 원하는 방향으로 렌더링된다
+
+

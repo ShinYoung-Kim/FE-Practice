@@ -1,0 +1,21 @@
+{
+  "name": "fe-practice",
+  "version": "1.0.0",
+  "description": "1. React Course - Beginner's Tutorial for React JavaScript Library [2022]\r     - static page 만들어보기\r (https://www.figma.com/file/9an3ZjmMq2eu1v7DXds1V7/ReactFacts-(Copy)?node-id=0-1&t=zQcgtwHAktxEL7Jl-0)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShinYoung-Kim/FE-Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ShinYoung-Kim/FE-Practice/issues"
+  },
+  "homepage": "https://github.com/ShinYoung-Kim/FE-Practice#readme"
+}
