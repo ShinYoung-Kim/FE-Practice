@@ -65,9 +65,18 @@ _source : null
 //해당 코드는 uncaught syntaxError 발생 : adjacent jsx elements must be wrapped!
 //여러 태그 연속적으로 넣고 싶다면 그들을 감싸는 부모 태그가 있어야 한다.
 
-ReactDOM.render(<div>
+const page = (
+    <div>
     <h1 className="header">Hello, everyone!</h1>
     <p>paragraph!</p>
-    </div>, 
+    </div>
+);
+
+console.log(page);
+ReactDOM.render(
+    page, 
     document.getElementById("root")
     );
+
+// JSX 묶음을 하나의 variable에 선언할 수 있고, 
+// 해당 variable은 다른 variable과 마찬가지로 사용할 수 있다.
