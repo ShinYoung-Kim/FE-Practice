@@ -117,9 +117,29 @@ _source : null
 // //ReactDOM.render의 역할은 react element를 찾아 해석하고 
 // //브라우저가 이해할 수 있는 real dom element로 바꿔주는 역할
 
-const page = (
-    <div>
-        <img src="./react-logo.png" width="40px"/>
+// const page = (
+//     <div>
+//         <img src="./react-logo.png" width="40px"/>
+//         <h1>Fun facts about React</h1>
+//         <ul>
+//             <li>Was first released in 2013</li>
+//             <li>Was originally created by Jordan Walke</li>
+//             <li>Has well over 100K stars on Github</li>
+//             <li>Is maintained by Facebook</li>
+//             <li>Powers thousands of enterprise apps, including mobile apps</li>
+//         </ul>
+//     </div>
+// );
+
+// ReactDOM.render(page, document.getElementById("root"));
+
+//Custom Element
+//camel case가 아닌 파스칼 case 사용할 것 (생성자처럼 이름 붙이기)
+//함수를 tag처럼 바꿔서 호출해주기
+
+function TemporarayName() {
+    return (<div>
+        <img src="./react-logo.png" width="40px" />
         <h1>Fun facts about React</h1>
         <ul>
             <li>Was first released in 2013</li>
@@ -129,6 +149,7 @@ const page = (
             <li>Powers thousands of enterprise apps, including mobile apps</li>
         </ul>
     </div>
-);
+    )
+};
 
-ReactDOM.render(page, document.getElementById("root"));
+ReactDOM.render(<TemporarayName/>, document.getElementById("root"));
