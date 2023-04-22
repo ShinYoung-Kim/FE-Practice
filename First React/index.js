@@ -22,13 +22,40 @@
 //     document.getElementById("root")
 // );
 
-//imperative한 vanilla js
+// //imperative한 vanilla js
+// const h1 = document.createElement("h1");
+// h1.textContent = "This is an imperative way to program";
+// h1.className = "header";
+// document.getElementById("root").append(h1);
+// //step by step으로 어떻게 추가해야하는지 알려줘야 한다.
+// //element가 많아질수록 불리해진다.
+
+// //declarative한 react
+// ReactDOM.render(<h1 className="header">Hello, everyone!</h1>, document.getElementById("root"));
+
+//JSX = javascript XML
+//: html처럼 보이는 javascript
 const h1 = document.createElement("h1");
 h1.textContent = "This is an imperative way to program";
 h1.className = "header";
-document.getElementById("root").append(h1);
-//step by step으로 어떻게 추가해야하는지 알려줘야 한다.
-//element가 많아질수록 불리해진다.
+console.log(h1);
 
-//declarative한 react
-ReactDOM.render(<h1 className="header">Hello, everyone!</h1>, document.getElementById("root"));
+const element = <h1 className="header">Hello, everyone!</h1>;
+console.log(element);
+//=> javascript object가 뜬다. 
+/*
+$$typeof : Symbol(react.element)
+key : null
+props : {className: 'header', children: 'Hello, everyone!'}
+ref : null
+type : "h1"
+_owner : null
+_store : {validated: false}
+_self : null
+_source : null
+[[Prototype]] : Object
+*/
+//=> JSX는 react가 이해할 수 있는 object를 반환하는 일종의 함수
+//-> 화면에 표시할 수 있는 실제 element를 만드는 데 도움이 된다.
+
+ReactDOM.render(element, document.getElementById("root"));
