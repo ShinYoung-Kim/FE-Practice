@@ -179,9 +179,11 @@ _source : null
 // Parent / Child component
 
 //별도 파일로 분리
-import Header from "./Header"
-import Footer from "./Footer"
-import MainContent from "./MainContent"
+import React from 'react'
+import { ReactDOM } from 'react-dom';
+import Header from './Header';
+import Footer from './Footer';
+import MainContent from './MainContent';
 
 function OrderedList() { //parent component
     return (

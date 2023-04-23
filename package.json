@@ -13,9 +13,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "bugs": {
     "url": "https://github.com/ShinYoung-Kim/FE-Practice/issues"
   },
-  "homepage": "https://github.com/ShinYoung-Kim/FE-Practice#readme"
+  "homepage": "."
 }
