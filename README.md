@@ -9,3 +9,19 @@ Why react?
 element들을 결합하여 만든 custom component 사용 가능 
 - Declarative (<-> Imperative)
 declarative는 what should be done만을 알려주면 되고, imperative는 how should it be done을 알려주어야 함 
+
+### Webpack, babel, bundler, build
+
+### nvm : node version manager
+
+### lts 
+
+### create react app 
+
+### react에서 image나 css 파일
+- (src 폴더에 넣을 때) css파일 js에서 import 해야 함
+- (src 폴더에 넣을 때) image path 타고타고 들어가는 게 보기 싫을 수 있음
+-> import reactLogo from "~~path"
+사용 시 src = {reactLogo} 가능
+- public 폴도에 image나 css 파일 넣는 건 비추 
+-> 만약 원한다면 공식문서 찾아볼 것
