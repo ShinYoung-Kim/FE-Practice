@@ -179,20 +179,19 @@ _source : null
 // Parent / Child component
 
 //별도 파일로 분리
-import React from 'react'
-import { ReactDOM } from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import Header from './Header';
 import Footer from './Footer';
 import MainContent from './MainContent';
 
 function OrderedList() { //parent component
-    return (
-        <div>
+    return (<div>
             <Header /> 
             <MainContent />
             <Footer />
         </div>
     )
-}
+};
 
 ReactDOM.render(<OrderedList />, document.getElementById("root"));
