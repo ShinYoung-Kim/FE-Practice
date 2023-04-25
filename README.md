@@ -25,3 +25,7 @@ declarative는 what should be done만을 알려주면 되고, imperative는 how 
 사용 시 src = {reactLogo} 가능
 - public 폴도에 image나 css 파일 넣는 건 비추 
 -> 만약 원한다면 공식문서 찾아볼 것
+
+### Short Figma Tutorial
+- 별도 youtube 참고할 것!
+https://www.youtube.com/watch?v=ybc2gkvjMDs&t=0s
