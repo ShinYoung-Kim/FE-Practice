@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import useState from 'react';
+import {useState} from 'react';
 
 function App() {
   let [글제목, 글제목변경] = useState('남자 코트 추천');
