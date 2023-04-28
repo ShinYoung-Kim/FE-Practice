@@ -27,3 +27,25 @@
 : 리액트에서 사용하는 HTML대용
 * class가 아닌 className을 사용해야 함
     - js 내부이므로 class라고 사용하면 예약어가 된다. 
+
+### 데이터 바인딩
+받아온 데이터 등을 HTML에 꽂아넣는 것
+- 전통적인 방법
+    - `document.getElementById().innerHTML = '';`을 통해 직접 바꿔줌
+- 리액트, 뷰, 앵귤러는 데이터 바인딩이 훨씬 직관적이고 쉬워짐 
+    - JSX에서 원하는 부분에 {변수명, 함수 등} 을 하면 됨
+    => 쉽게 HTML 동적으로 사용 가능, 속성 내부에서도 사용 가능 
+
+
+### 리액트에서 이미지
+- image src에서 경로 주소를 입력하는 대신 import문을 사용하여 사용 가능
+- ex. import logo from './logo.svg';
+- <img src={logo}>
+
+### 리액트에서 style 속성 집어넣을 때
+- object 형식으로 집어넣을 것! (style은 무조건 중괄호)
+- style = {{
+    color : 'blue',
+    fontSize : '30px'
+}}
+- 또는 변수로 따로 빼서 넣는 것도 가능 
