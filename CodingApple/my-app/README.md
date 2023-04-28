@@ -77,3 +77,18 @@
         () => {}
         or 클릭될 때 실행할 함수
     }
+
+### Component
+: HTML을 줄여서 사용할 수 있는 방법
+- 이름은 대문자로 지을 것! -> 렌더링 되지 않을 수도 
+- return() 내부에는 태그 하나로 묶어야 한다. 
+    - 이 때 div 태그를 싫어한다면 fragment라는 문법 존재 (빈 태그 사용)
+- function App도 일종의 component
+- 관리가 편해진다는 장점
+- component로 만드는 기준 
+    - 반복출현하는 HTML 덩어리들
+    - 자주 변경되는 HTML UI들 (재렌더링되는 UI를 component로 분리해두면 성능적으로 좋음)
+    - 다른 페이지 만들 때
+- 단점
+    - state 쓸 때 복잡해진다
+        - 상위 component에서 만든 state 쓰려면 props 문법 사용해야하기 때문에
