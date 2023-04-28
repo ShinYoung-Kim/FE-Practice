@@ -22,3 +22,8 @@
 * node_modules : 라이브러리 모은 폴더 
 * public 폴더 : static 파일 보관함 -> 압축이 되지 않는 부분
 * package.json : 설치한 라이브러리 목록 (이름과 버전 확인 가능)
+
+### JSX
+: 리액트에서 사용하는 HTML대용
+* class가 아닌 className을 사용해야 함
+    - js 내부이므로 class라고 사용하면 예약어가 된다. 
