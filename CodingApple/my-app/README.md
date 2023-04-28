@@ -62,3 +62,8 @@
 
 ### destructing
 - array나 object에 있던 자료를 변수에 쉽게 담기 위해 사용
+
+### eslint
+: 잘못된 코딩 관습을 바로잡아주는 것
+- 원하지 않으면
+    - /* eslint-disable */ 적기
