@@ -24,12 +24,7 @@ const ArticleTemplate = ( {props} ) => {
                         <img className='authorImage' src={ authorImage } alt='authorImage' />
                         <p className='authorName'>{ authorName }</p>
                     </div>
-                    <div className=''>
-                        
-                        <div className='siteName'>{ siteName }</div>
-                        
-                        <RiMore2Fill />
-                    </div>
+                <RiMore2Fill color='#384fbf' cursor='default' position='absolute' top='0' right='0'/>
                 </div>
             </div>
             <TextContentList textContents={ textContents }/>
