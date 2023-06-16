@@ -6,28 +6,23 @@ $article-green: #08733D;
 $grey-color: #9E9E9E;
 
 .Template1Main {
-    margin: 0;
+    margin: 10px;
     padding: 0;
     width: 100%;
     height: auto;
-    border: black 10px solid;
     border-radius: $border-radius-size + 5;
-    //box-shadow: 2px 2px 10px #eae9e9;
+    box-shadow: 2px 2px 10px #eae9e9;
     cursor: pointer;
-    //background-color: $article-yellow;
-    //overflow: hidden;
-    background-color: black;
-}
-
-.Template1 {
-    
     display: inline-block;
+    background-color: $article-yellow;
+    //overflow: hidden;
 }
 
 .templateMedia {
     width: 100%;
     height: auto;
-    border-radius: $border-radius-size;
+    border-top-left-radius: $border-radius-size;
+    border-top-right-radius: $border-radius-size;
     display: block;
     border: $article-yellow 10px solid;
     box-sizing: border-box;
@@ -35,51 +30,39 @@ $grey-color: #9E9E9E;
 
 .templateCommonArea {
     text-align: center;
+    padding: 20px;
 }
 
 .templateType {
     font-size: medium;
     font-weight: 550;
-    color: $article-yellow;
-    background-color: $article-red;
-    border: $article-red 10px solid;
-    border-radius: $border-radius-size;
-    margin-top: 8px;
+    color: $article-red;
 }
 
 .templateTitle {
     font-size: large;
     font-weight: 1000;
-    margin: 8px 0;
+    margin: 10px 0;
 
-    color: $article-yellow;
-    background-color: $article-blue;
-    border: $article-blue 10px solid;
-    border-radius: $border-radius-size;
+    color: $article-blue;
 }
 
 .templateDescription {
     font-size: small;
-    color: $article-yellow;
+    color: $article-green;
     max-height: 54px;
     overflow: hidden;
-background-color: $article-green;
-    border: $article-green 10px solid;
-    border-radius: $border-radius-size;
-    margin-bottom: 8px;
 }
 
 .templateCustomArea {
     padding: 10px;
-    width: 100%;
     background-color: $article-blue;
-    border-radius: $border-radius-size;
-    border: $article-blue 10px solid;
-    box-sizing: border-box;
+    border-bottom-left-radius: $border-radius-size;
+    border-bottom-right-radius: $border-radius-size;
 }
 
 .author {
-    //width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
