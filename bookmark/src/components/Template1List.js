@@ -1,11 +1,11 @@
-import ArticleTemplate from './ArticleTemplate';
+import ProductTemplate from './ProductTemplate';
 import './Template1List.scss';
 
 const Template1List = ({ templates }) => {
     return (
         <div className="Template1List">
             {templates.map(template => (
-                <ArticleTemplate props={ template } key={ template.id }/>
+                <ProductTemplate props={ template } key={ template.id }/>
             ))}
         </div>
     );
