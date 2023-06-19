@@ -18,10 +18,10 @@ const ArticleTemplate = ( {props} ) => {
                 </div>
             </div>
                 <div className='templateCustomArea'>
-                    <div className='siteName'>
-                        {site}
+                    <div className={`${hover ? 'siteName hover' : 'siteName'}`}>
+                        <div className={`${hover ? 'siteNameText hover' : 'siteNameText'}`}>{ site }</div>
                     </div>
-                    <div className='productPrice'>{ price }</div>
+                    <div className={`${hover ? 'priceText hover' : 'priceText'}`}> { price }</div>
                 </div>
             </div>
         </div>

@@ -18,8 +18,8 @@ $author-info-size: 1rem;
 
 .Template1Main {
     width: 100%;
-    display: inline-block;
-    
+    display: block;
+    position: relative;
 }
 
 .TemplateHeader {
@@ -30,9 +30,9 @@ $author-info-size: 1rem;
 
 .TemplateMediaOverlay {
     background-color: transparent;
-    border-top-left-radius: $main-image-border-radius;
-    border-top-right-radius: $main-image-border-radius;
-    //border-radius: $main-image-border-radius;
+    //border-top-left-radius: $main-image-border-radius;
+    //border-top-right-radius: $main-image-border-radius;
+    border-radius: $main-image-border-radius;
     &.hover {
         background-color: #384fbf;
     }
@@ -43,9 +43,9 @@ $author-info-size: 1rem;
         display: block;
     object-fit: cover;
     opacity: 1;
-    border-top-left-radius: $main-image-border-radius;
-    border-top-right-radius: $main-image-border-radius;
-    //border-radius: $main-image-border-radius;
+    //border-top-left-radius: $main-image-border-radius;
+    //border-top-right-radius: $main-image-border-radius;
+    border-radius: $main-image-border-radius;
     &.hover {
         opacity: 0.1;
     }
@@ -79,22 +79,49 @@ $author-info-size: 1rem;
     display: none;
 }
 
-.templateCustomArea {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #F7F6FA;
-    border-bottom-left-radius: $main-image-border-radius;
-    border-bottom-right-radius: $main-image-border-radius;
-    //border-radius: $main-image-border-radius;
-    padding: 10px;
-    margin: 0 0 0 0;
-}
 
-.siteName {
+.priceText {
     background-color: #384fbf;
     color: white;
     padding: 2px 10px;
     border-radius: $main-image-border-radius;
     font-size: $transparent-white-text-size;
+    
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    &.hover {
+        background-color: white;
+        color: #384fbf;
+    }
+}
+
+.siteName {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-size: $black-content-title-text-size;
+
+    border-radius: 50%;
+    background-color: #384fbf;
+    opacity: 95%;
+    padding: 0 15px;
+    display: flex;
+
+    &.hover {
+        background-color: white;
+    }
+}
+
+.siteNameText {
+    padding-top: 50%;
+    padding-bottom: 50%;
+
+    color: white;
+    font-weight: bold;
+
+    &.hover {
+        color: #384fbf;
+    }
 }
