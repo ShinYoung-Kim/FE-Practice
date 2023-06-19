@@ -76,13 +76,6 @@ $author-info-size: 1rem;
         color: white;
     }
 
-    .templateDescription {
-        color: $transparent-white-text-color;
-        font-size: $transparent-white-text-size;
-        max-height: calc($transparent-white-text-size * 4);
-        overflow: hidden;
-    }
-
     display: none;
 }
 
@@ -98,34 +91,10 @@ $author-info-size: 1rem;
     margin: 0 0 0 0;
 }
 
-.author {
-    display: flex;
-
-    .authorImage {
-        width: calc($author-info-size + 6px);
-        height: calc($author-info-size + 6px);
-        border-radius: 50%;
-    }
-
-    .authorName {
-        font-size: $author-info-size;
-        margin: 0 0 0 10px;
-        font-weight: 1000;
-        color: #384fbf;   
-    }
-}
-
 .siteName {
     background-color: #384fbf;
     color: white;
     padding: 2px 10px;
     border-radius: $main-image-border-radius;
     font-size: $transparent-white-text-size;
-}
-
-hr {
-    border: 0;
-    height: 0.01rem;
-    background-color: #384fbf;
-    margin: 15px 0;
 }
