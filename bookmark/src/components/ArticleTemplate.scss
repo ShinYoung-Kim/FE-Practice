@@ -40,7 +40,7 @@ $author-info-size: 1rem;
 
     .templateMedia {
         width: 100%;
-        height: auto;
+        display: block; 
     object-fit: cover;
     opacity: 1;
     border-top-left-radius: $main-image-border-radius;
