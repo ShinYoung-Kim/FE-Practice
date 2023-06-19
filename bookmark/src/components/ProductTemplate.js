@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './ProductTemplate.scss';
-import TextContentList from './TextContentList';
 
 const ArticleTemplate = ( {props} ) => {
     const {url, img, title, id, type, price, site} = props;

@@ -123,6 +123,8 @@ const App = () => {
 
   return (
     <Template1List templates = { productTemplates }/>
+    // <Template1List templates = { articleTemplates } />
+    
   )
 }
 
