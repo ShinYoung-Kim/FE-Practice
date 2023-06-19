@@ -121,10 +121,67 @@ const App = () => {
   ]
   );
 
+  const [videoTemplates, setVideoTemplates] = useState([
+    {
+      url : "https://www.youtube.com/watch?v=ujKDDyihYLY",
+      thumbnail: "https://i.ytimg.com/vi/ujKDDyihYLY/maxresdefault.jpg",
+      channelName: "",
+      title: "믿고 듣는 A J R 노래모음 l 에이제이알 노래 모음",
+      views: 252476,
+      type: "video",
+      id: 11,
+    },
+    {
+      url : "https://www.youtube.com/watch?v=ujKDDyihYLY",
+      thumbnail: "https://i.ytimg.com/vi/ujKDDyihYLY/maxresdefault.jpg",
+      channelName: "",
+      title: "믿고 듣는 A J R 노래모음 l 에이제이알 노래 모음",
+      views: 252476,
+      type: "video",
+      id: 11,
+    },
+    {
+      url : "https://www.youtube.com/watch?v=ujKDDyihYLY",
+      thumbnail: "https://i.ytimg.com/vi/ujKDDyihYLY/maxresdefault.jpg",
+      channelName: "",
+      title: "믿고 듣는 A J R 노래모음 l 에이제이알 노래 모음",
+      views: 252476,
+      type: "video",
+      id: 11,
+    },
+    {
+      url : "https://www.youtube.com/watch?v=ujKDDyihYLY",
+      thumbnail: "https://i.ytimg.com/vi/ujKDDyihYLY/maxresdefault.jpg",
+      channelName: "",
+      title: "믿고 듣는 A J R 노래모음 l 에이제이알 노래 모음",
+      views: 252476,
+      type: "video",
+      id: 11,
+    },
+    {
+      url : "https://www.youtube.com/watch?v=ujKDDyihYLY",
+      thumbnail: "https://i.ytimg.com/vi/ujKDDyihYLY/maxresdefault.jpg",
+      channelName: "",
+      title: "믿고 듣는 A J R 노래모음 l 에이제이알 노래 모음",
+      views: 252476,
+      type: "video",
+      id: 11,
+    },
+    {
+      url : "https://www.youtube.com/watch?v=ujKDDyihYLY",
+      thumbnail: "https://i.ytimg.com/vi/ujKDDyihYLY/maxresdefault.jpg",
+      channelName: "",
+      title: "믿고 듣는 A J R 노래모음 l 에이제이알 노래 모음",
+      views: 252476,
+      type: "video",
+      id: 11,
+    },
+  ]);
+
   return (
-    <Template1List templates = { productTemplates }/>
+    //<Template1List templates = { productTemplates }/>
     // <Template1List templates = { articleTemplates } />
-    
+    <Template1List templates = { videoTemplates } />
   )
 }
 

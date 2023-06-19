@@ -1,11 +1,11 @@
-import ProductTemplate from './ProductTemplate';
+import VideoTemplate from './VideoTemplate';
 import './Template1List.scss';
 
 const Template1List = ({ templates }) => {
     return (
         <div className="Template1List">
             {templates.map(template => (
-                <ProductTemplate props={ template } key={ template.id }/>
+                <VideoTemplate props={ template } key={ template.id }/>
             ))}
         </div>
     );
