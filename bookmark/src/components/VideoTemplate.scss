@@ -99,11 +99,11 @@ $author-info-size: 1rem;
 
 .siteName {
     position: absolute;
-    bottom: 15px;
+    top: 15px;
     left: 15px;
     font-size: $black-content-title-text-size;
 
-    border-radius: 50%;
+    border-radius: $main-image-border-radius;
     background-color: #384fbf;
     opacity: 95%;
     padding: 0 15px;
@@ -115,9 +115,6 @@ $author-info-size: 1rem;
 }
 
 .siteNameText {
-    padding-top: 50%;
-    padding-bottom: 50%;
-
     color: white;
     font-weight: bold;
 

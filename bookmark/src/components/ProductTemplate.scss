@@ -79,7 +79,6 @@ $author-info-size: 1rem;
     display: none;
 }
 
-
 .priceText {
     background-color: #384fbf;
     color: white;
@@ -107,7 +106,7 @@ $author-info-size: 1rem;
     background-color: #384fbf;
     opacity: 95%;
     padding: 0 15px;
-    display: flex;
+    height: fit-content;
 
     &.hover {
         background-color: white;
