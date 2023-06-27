@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Template1List from './components/Template1List';
 
 const App = () => {
@@ -180,16 +180,18 @@ const App = () => {
 
   const [initProductTemplates, setInitProductTemplates] = useState([]);
   const productURL = "https://0nyhd85jc9.execute-api.ap-northeast-2.amazonaws.com/beta/scrap";
-  const getProductList = async (productURL) => {
-    const initResult = await fetch(productURL, {
-    method: 'GET',
-  });
-    const result = await initResult.json();
-    setInitProductTemplates(result);
-    console.log(result);
-  };
+  const getProductList = useCallback(
+      () => 
+      fetch(productURL)
+      .then(response => response.json())
+      .then(( data ) => {
+        return data
+      })
+    );
   
-  useEffect(() => {getProductList(productURL)}, []);
+  useEffect(() => {
+    getProductList().then(data => setInitProductTemplates(data))
+  }, [getProductList]);
 
   return (
     <Template1List templates = { initProductTemplates }/>
